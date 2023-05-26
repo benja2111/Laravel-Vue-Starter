@@ -1,3 +1,3 @@
 <template>
-    <RouterView />
+    404 NOT FOUND
 </template>

@@ -1,7 +1,19 @@
 import './bootstrap';
+import '@/css/app.css';
 
-import {createApp} from 'vue'
+// Import modules...
+import { createApp } from 'vue'
 
+// Import components...
 import App from './App.vue'
 
-createApp(App).mount("#app")
+// Import routes
+import router from "./router/index";
+
+// Create a new Vue application
+const app = createApp(App);
+app.use(router);
+
+// Mount the application and start it
+app.mount('#app')
+
