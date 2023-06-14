@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "dev": "vite",
+        "dev": "concurrently \"vite\" \"php artisan serve\"",
         "build": "vite build",
         "lint": "eslint --quiet --ext .js,.vue resources/",
         "lint:fix": "eslint --quiet --ext .js,.vue resources/ --fix",
@@ -9,6 +9,7 @@
     },
     "devDependencies": {
         "axios": "^1.1.2",
+        "concurrently": "^8.2.0",
         "eslint": "^8.41.0",
         "eslint-plugin-prettier": "^4.2.1",
         "eslint-plugin-vue": "^9.14.0",
